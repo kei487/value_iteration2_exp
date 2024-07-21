@@ -8,8 +8,6 @@ ros2 launch value_iteration2_exp value_iteration2_exp.launch.py
 ros2 service call /motor_power std_srvs/SetBool '{data: true}'
 ```
 
-This ROS2 package contains launch files that start nodes licensed under the following licenses:
-
 ## Licenses Used
 
 The launch files in this package start nodes that are licensed under the following terms:
