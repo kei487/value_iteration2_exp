@@ -14,7 +14,7 @@ def generate_launch_description():
     map_file = os.path.join(
         get_package_share_directory('value_iteration2_exp'),
         'map',
-        'iscas_museum.yaml',
+        'cit_19th.yaml',
     )
     vi2_params_file = os.path.join(
         get_package_share_directory('value_iteration2'),
@@ -26,13 +26,8 @@ def generate_launch_description():
         'config',
         'config.rviz',
     )
-    use_sim_time = 'true'
+    use_sim_time = 'false'
 
-    exec_gazebo = ExecuteProcess(
-        cmd=[ 'ros2', 'launch', 'raspicat_gazebo',
-              'raspicat_with_iscas_museum.launch.py', 'rviz:=false' ],
-        output='screen',
-    )
     exec_emcl2 = ExecuteProcess(
         cmd=[ 'ros2', 'launch', 'emcl2', 'emcl2.launch.py',
               f'params_file:={emcl2_params_file}',
@@ -57,7 +52,6 @@ def generate_launch_description():
     )
 
     ld = LaunchDescription()
-    ld.add_action(exec_gazebo)
     ld.add_action(exec_emcl2)
     ld.add_action(vi2_node)
     ld.add_action(rviz2)
