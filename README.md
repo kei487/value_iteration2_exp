@@ -8,13 +8,18 @@ ros2 launch value_iteration2_exp value_iteration2_exp_sim.launch.py
 ros2 service call /motor_power std_srvs/SetBool '{data: true}'
 ```
 
-## How to use in a real machine
-```
-ros2 launch value_iteration2_exp value_iteration2_exp.launch.py
-```
-```
-ros2 service call /motor_power std_srvs/SetBool '{data: true}'
-```
+## How to use in a real Raspberry Pi Cat
++ Runs on any computer
+    ```
+    ros2 launch value_iteration2_exp value_iteration2_exp.launch.py
+    ```
+    ```
+    ros2 service call /motor_power std_srvs/SetBool '{data: true}'
+    ```
++ Run on Raspberry Pi
+    ```
+    ros2 launch raspicat raspicat.launch.py
+    ```
 
 ## Licenses Used
 
