@@ -5,7 +5,6 @@ from launch.actions import ExecuteProcess
 from launch_ros.actions import Node
 
 def generate_launch_description():
-
     emcl2_params_file = os.path.join(
         get_package_share_directory('emcl2'),
         'config',

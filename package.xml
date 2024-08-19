@@ -3,8 +3,8 @@
 <package format="3">
   <name>value_iteration2_exp</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="youjiyongmu4@gmail.com">nacky</maintainer>
+  <description>to experiment for mobile robot</description>
+  <maintainer email="keitaro496@gmail.com">keitaro</maintainer>
   <license>TODO: License declaration</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
