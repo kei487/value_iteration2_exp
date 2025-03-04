@@ -6,11 +6,11 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
 
-#    emcl2_params_file = os.path.join(
-#        get_package_share_directory('emcl2'),
-#        'config',
-#        'emcl2.param.yaml',
-#    )
+    emcl2_params_file = os.path.join(
+        get_package_share_directory('emcl2'),
+        'config',
+        'emcl2.param.yaml',
+    )
     map_file = os.path.join(
         get_package_share_directory('value_iteration2_exp'),
         'map',
