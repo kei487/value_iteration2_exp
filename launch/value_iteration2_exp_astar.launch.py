@@ -74,7 +74,7 @@ def generate_launch_description():
     planner_node = Node(
         package='value_iteration2',
         namespace='value_iteration2',
-        executable='planner',
+        executable='vi_planner',
         #output='screen'
         parameters=[{
 #        parameters=[vi2_planner_config],
