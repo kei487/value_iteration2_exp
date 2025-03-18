@@ -13,13 +13,13 @@ def generate_launch_description():
     )
     map_file_loc = os.path.join(
         get_package_share_directory('value_iteration2_exp'),
-        'map/tsudanuma/localization',
+        'map','tsudanuma','localization',
         #'cit_19th.yaml',
         'tsudanuma-challenge_loc.yaml',
     )
     map_file_nav = os.path.join(
         get_package_share_directory('value_iteration2_exp'),
-        'map/tsudanuma/navigation',
+        'map','tsudanuma','navigation',
         #'cit_19th.yaml',
         'tsudanuma-challenge_nav.yaml',
     )
