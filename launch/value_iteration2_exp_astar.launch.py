@@ -53,7 +53,7 @@ def generate_launch_description():
         package='nav2_map_server',
         executable='map_server',
         name='map_server_nav',
-        parameters=[{'yaml_filename': map_file_nav}],
+        parameters=[{'yaml_filename': map_file_nav}, {'topic_name':"map_nav"}, {'frame_id':"map_nav"}],
         output='screen',
     )
     vi2_node = Node(
